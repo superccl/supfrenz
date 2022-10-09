@@ -1,8 +1,8 @@
 import React from 'react'
-import './style/banner.css'
+import './banner.scss'
 const Banner = () => {
   return (
-    <div>Banner</div>
+    <div id="banner" className="banner-container">Banner</div>
   )
 }
 
