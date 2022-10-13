@@ -2,7 +2,7 @@
 
 
 .container {
-    margin: 100px;
+    margin: 7.5vh 7.5vw;
     display: flex;
     gap: 3rem;
     @include media(large) {
@@ -32,6 +32,10 @@
         flex-direction: column;
         gap: 3rem;
         flex: 1 1 0px;
+        @include media(large) {
+            align-items: center;
+            text-align: center;
+        }
         &__title {
             color: transparent;
             animation: moveText 4s infinite;

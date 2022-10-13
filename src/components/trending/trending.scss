@@ -1,7 +1,7 @@
 @import '../../styles/global.scss';
 
 #trending {
-    margin: 100px;
+    margin: 7.5vh 7.5vw;
 }
 .trending-container {
     padding: 3rem;
@@ -10,7 +10,10 @@
     gap: 3rem;
     @include media(medium) {
         flex-direction: column-reverse;
-
+    }
+    @include media(small) {
+        padding: 1rem;
+        gap: 1rem;
     }
     &__description-area {
         display: flex;
@@ -39,6 +42,9 @@
             border-radius: 1rem;
             margin: 1rem;
             transition: scale .1s ease-in;
+            @include media(small) {
+                margin: .5rem;
+            }
             &:hover {
                 scale: 1.1;
             }

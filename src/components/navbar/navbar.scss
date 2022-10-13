@@ -10,6 +10,9 @@
     padding: 0rem 3rem;
     font-size: 1.25rem;
     position: relative;
+    @include media(small) {
+        padding: 0rem 1.5rem;
+    }
 
     &__logo-link {
         height: inherit;
@@ -38,11 +41,12 @@
             position: absolute;
             flex-direction: column;
             align-items: stretch;
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(0, 0, 0, 0.5);
             right: 0;
             top: 0;
             width: 50vw;
             padding: 2rem;
+            z-index: 100;
         }
         &__cancel {
             display: none;
