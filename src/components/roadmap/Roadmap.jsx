@@ -29,7 +29,7 @@ const Roadmap = () => {
   ]
   return (
     <div id="roadmap" className="roadmap-container">Roadmap
-      {items.map(item => <RoadmapItem key={uuid()} title={item.title} body={item.body} style={item.style}/>)}
+      {items.map(item => <RoadmapItem key={uuid()} {...item}/>)}
     </div>
   )
 }

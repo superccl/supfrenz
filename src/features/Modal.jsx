@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 
 import './modal.scss'
 
@@ -13,9 +13,9 @@ const DefaultModal = () => {
 
   return <div style={DEFAULT_MODAL_STYLE}>DefaultModal</div>
 }
-const Modal = ( { ModalElement=DefaultModal, open, onClose, position='center' }) => {
+const Modal = ( { ModalElement=DefaultModal, open=true, onClose, position='center', enableOverlay=true }) => {
   const overlayRef = useRef()
-
+  if(!enableOverlay) return <ModalElement />;
   if(!open) return null;
   return ReactDom.createPortal(
     <div className="overlay-container" ref={overlayRef} onClick={onClose}>

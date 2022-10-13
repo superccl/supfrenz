@@ -1,0 +1,61 @@
+@use 'sass:map';
+
+$screensize: (
+    small: 480px,
+    medium: 768px,
+    large: 1200px
+);
+@mixin media($key) {
+    $size: map.get($screensize, $key);
+
+    @media (max-width: $size) {
+        @content;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+$pFont: 'Baloo 2',
+cursive;
+$bg1: #333551;
+$bg2: #5B5E84;
+$bgGradient: linear-gradient(180deg, #010007 -16.33%, #000B40 24.67%, #02FEFF 100%);
+$white: #FFF;
+$pColor: #FC96CE;
+$sColor: #01BFDB;
+
+  @keyframes randomFill {
+    0% {
+      fill: #FBE76E;
+    }
+  
+    25% {
+      fill: $pColor;
+    }
+  
+    50% {
+      fill: $sColor;
+    }
+  
+    75% {
+      fill: #D5FD8E;
+    }
+  
+    100% {
+      fill: #FBE76E;
+    }
+}
+
+@keyframes moveText {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 25%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }

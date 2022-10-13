@@ -1,0 +1,18 @@
+@import '../../styles/util.scss';
+
+.team-container {
+    margin: 100px;
+    font-size: 1rem;
+    &__header {
+        text-align: center;
+        margin: 5rem;
+        font-size: 3em;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 1rem;
+        flex: 1 1 0px;
+    }
+}
