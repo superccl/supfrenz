@@ -9,6 +9,8 @@
 
     &__wrap {
         position: absolute;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 1rem;
         &.top {
             top: 0;
         }

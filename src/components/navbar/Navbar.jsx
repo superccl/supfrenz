@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import useToggle from "../../hooks/useToggle"
+import Modal from "../../features/Modal"
 import './navbar.scss'
 import { FaBars } from 'react-icons/fa'
 import logo from '../../asset/44.webp'

@@ -1,20 +1,35 @@
 import React from 'react'
 import './roadmap.scss'
-import Modal from '../../features/Modal'
-import useToggle from '../../hooks/useToggle'
-
+import RoadmapItem from './RoadmapItem'
+import uuid from 'react-uuid'
 
 const Roadmap = () => {
-  const [openModal, setOpenModal] = useToggle(true)
+
+  const items = [
+    {
+      title: 'Title 1',
+      body: 'Body 1',
+      style: {top: '10px', left: '10px'}
+    },
+    {
+      title: 'Title 2',
+      body: 'Body 2',
+      style: {top: '10%', left: '10%'}
+    },
+    {
+      title: 'Title 3',
+      body: 'Body 3',
+      style: {top: '20px', left: '30px'}
+    },
+    {
+      title: 'Title 4',
+      body: 'Body 4',
+      style: {top: '50%', left: '50%'}
+    },
+  ]
   return (
     <div id="roadmap" className="roadmap-container">Roadmap
-      <button className="roadmap-container__button">
-        <span className="roadmap-container__button__span" />
-      </button>
-      <button className="roadmap-container__button">
-        <span className="roadmap-container__button__span" />
-      </button>
-      <Modal open={openModal} onClose={() => setOpenModal(false)}/>
+      {items.map(item => <RoadmapItem key={uuid()} title={item.title} body={item.body} style={item.style}/>)}
     </div>
   )
 }

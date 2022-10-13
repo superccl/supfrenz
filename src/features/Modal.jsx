@@ -4,8 +4,14 @@ import { useRef, useEffect } from 'react'
 
 import './modal.scss'
 
+  
 const DefaultModal = () => {
-  return <div style={{background: 'rgba(0, 0, 0, 0.75)', color: 'white', padding: '1rem'}}>DefaultModal</div>
+  const DEFAULT_MODAL_STYLE = {
+    color: 'white', 
+    padding: '1rem'
+  }
+
+  return <div style={DEFAULT_MODAL_STYLE}>DefaultModal</div>
 }
 const Modal = ( { ModalElement=DefaultModal, open, onClose, position='center' }) => {
   const overlayRef = useRef()
