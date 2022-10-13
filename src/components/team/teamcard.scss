@@ -1,13 +1,10 @@
 @import '../../styles/util.scss';
 
 .team-container__cards__item {
-    width: 249px;
-    height: 249px;
     transition: transform 0.5s ease-in;
     position: relative;
     transform-style: preserve-3d;
     &__front, &__back {
-        position: absolute;
         width: 100%;
         aspect-ratio: 1;
         border-radius: 1rem;
@@ -18,6 +15,8 @@
         object-fit: cover;
     }
     &__back {
+        position: absolute;
+        top: 0;
         background: rgba(0, 0, 0, 0.25);
         transform: rotateY(180deg);
         display: flex;
