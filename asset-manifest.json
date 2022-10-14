@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/supfrenz/static/css/main.a11ed3af.css",
+    "main.js": "/supfrenz/static/js/main.5861de5c.js",
+    "static/media/396.webp": "/supfrenz/static/media/396.eb134b3c47e7ff76f5cb.webp",
+    "static/media/44.webp": "/supfrenz/static/media/44.c507ac997e314a7c491d.webp",
+    "index.html": "/supfrenz/index.html",
+    "main.a11ed3af.css.map": "/supfrenz/static/css/main.a11ed3af.css.map",
+    "main.5861de5c.js.map": "/supfrenz/static/js/main.5861de5c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a11ed3af.css",
+    "static/js/main.5861de5c.js"
+  ]
+}
