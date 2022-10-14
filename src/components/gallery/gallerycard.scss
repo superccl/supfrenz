@@ -1,3 +1,5 @@
+@import '../../styles/util.scss';
+
 .gallery-container__cards__item {
     width: 100%;
     &:hover {
@@ -13,6 +15,10 @@
         text-align: center;
         font-size: 1.5rem;
         margin: 1.5rem;
+        @include media(medium) {
+            margin: 0rem;
+            font-size: 1.25rem;
+        }
     }
 }
 
