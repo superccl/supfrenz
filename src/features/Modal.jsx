@@ -13,14 +13,13 @@ const DefaultModal = () => {
 
   return <div style={DEFAULT_MODAL_STYLE}>DefaultModal</div>
 }
-const Modal = ( { ModalElement=DefaultModal, open=true, onClose, position='center', enableOverlay=true }) => {
+const Modal = ( { children, open=true, onClose, position='center' }) => {
   const overlayRef = useRef()
-  if(!enableOverlay) return <ModalElement />;
   if(!open) return null;
   return ReactDom.createPortal(
     <div className="overlay-container" ref={overlayRef} onClick={onClose}>
       <div className={`overlay-container__wrap ${position}`} onClick={e => e.stopPropagation()}>
-        {<ModalElement />}
+        {children}
       </div>
     </div>
     , document.getElementById('portal')
