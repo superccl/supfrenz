@@ -2,7 +2,7 @@ import React from 'react'
 import './roadmap.scss'
 import RoadmapItem from './RoadmapItem'
 import uuid from 'react-uuid'
-import data from '../../data/data.json'
+import {data} from '../../data/data'
 
 const Roadmap = () => {
 

@@ -16,7 +16,7 @@ const Navbar = () => {
       window.innerWidth > 1200 && setOpenModal(false)
     })
   })
-  
+
   return (
     <nav className="navbar-container" id="navbar">
       <a href="#" className='navbar-container__logo-link'>

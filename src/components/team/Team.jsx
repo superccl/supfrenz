@@ -1,65 +1,10 @@
 import React from 'react'
 import './team.scss'
-import imgPath from '../../asset/44.webp'
 import TeamCard from './TeamCard'
 import uuid from 'react-uuid'
+import { data } from '../../data/data'
 const Team = () => {
-  const items = [
-    {
-      img: imgPath,
-      name: 'Andy',
-      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima magni vitae illum voluptatibus asperiores laudantium voluptates ipsum nesciunt consectetur soluta.',
-      link: '#',
-    },
-    {
-      img: imgPath,
-      name: 'Andy',
-      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima magni vitae illum voluptatibus asperiores laudantium voluptates ipsum nesciunt consectetur soluta.',
-      link: '#',
-    },
-    {
-      img: imgPath,
-      name: 'Andy',
-      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima magni vitae illum voluptatibus asperiores laudantium voluptates ipsum nesciunt consectetur soluta.',
-      link: '#',
-    },
-    {
-      img: imgPath,
-      name: 'Andy',
-      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima magni vitae illum voluptatibus asperiores laudantium voluptates ipsum nesciunt consectetur soluta.',
-      link: '#',
-    },
-    {
-      img: imgPath,
-      name: 'Andy',
-      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima magni vitae illum voluptatibus asperiores laudantium voluptates ipsum nesciunt consectetur soluta.',
-      link: '#',
-    },
-    {
-      img: imgPath,
-      name: 'Andy',
-      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima magni vitae illum voluptatibus asperiores laudantium voluptates ipsum nesciunt consectetur soluta.',
-      link: '#',
-    },
-    {
-      img: imgPath,
-      name: 'Andy',
-      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima magni vitae illum voluptatibus asperiores laudantium voluptates ipsum nesciunt consectetur soluta.',
-      link: '#',
-    },
-    {
-      img: imgPath,
-      name: 'Andy',
-      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima magni vitae illum voluptatibus asperiores laudantium voluptates ipsum nesciunt consectetur soluta.',
-      link: '#',
-    },
-    {
-      img: imgPath,
-      name: 'Andy',
-      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima magni vitae illum voluptatibus asperiores laudantium voluptates ipsum nesciunt consectetur soluta.',
-      link: '#',
-    },
-  ]
+  const items = data.team
 
   return (
     <div id="team" className="team-container">
