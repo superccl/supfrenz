@@ -24,18 +24,6 @@
             width: 20px;
         }
     }
-    &__modal-wrap {
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &__title {
-            margin: 2rem 0;
-        }
-        &__body {
-            margin: 1rem 0;
-        }
-    }
 }
 
 @keyframes pulseMobile {

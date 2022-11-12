@@ -1,13 +1,12 @@
 import React from 'react'
-import './gallerycard.scss'
 import { Link } from 'react-router-dom'
 
 const GalleryCard = ({ img, serialNumber }) => {
   return (
-    <div className="gallery-container__cards__item">
+    <div className="w-full">
         <Link to={`/details/${serialNumber}`}>
-            <img src={img} alt="image" className="gallery-container__cards__item__img" />
-            <p className='gallery-container__cards__item__nftid'>Serial #{serialNumber}</p>
+            <img src={img} alt="image" className="w-full aspect-square object-cover rounded-lg" />
+            <p className='text-center m-4 text-2xl'>Serial #{serialNumber}</p>
         </Link>
     </div>
   )

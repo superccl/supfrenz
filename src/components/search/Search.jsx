@@ -1,5 +1,4 @@
 import React from 'react'
-import './search.scss'
 import { useNavigate } from 'react-router-dom'
 import { useRef } from 'react'
 const Search = () => {
@@ -10,11 +9,11 @@ const Search = () => {
   }
 
   return (
-    <div id="search" className="search-container">
-      <h2 className="search-container__header">FIND MY WHOOPSIE</h2>
-      <form className="search-container__form">
-        <input ref={inputRef} type="number" className="search-container__form__input"/>
-        <button type="button" onClick={handleSubmit} className="search-container__form__submit">SEARCH</button>
+    <div id="search" className="my-6 mx-0 flex flex-col justify-center items-center">
+      <h2 className="m-12">FIND MY WHOOPSIE</h2>
+      <form className="flex justify-center">
+        <input ref={inputRef} type="number" className="py-1 px-2 text-lg w-[50%]"/>
+        <button type="button" onClick={handleSubmit} className="p-2 ml-4">SEARCH</button>
       </form>
     </div>
   )

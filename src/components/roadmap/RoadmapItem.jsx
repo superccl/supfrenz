@@ -11,9 +11,9 @@ const RoadmapItem = ( {title, body, style} ) => {
                 <span className="roadmap-container__button__span" />
             </button>
             <Modal open={openModal} onClose={() => setOpenModal(false)}>
-                <div className="roadmap-container__modal-wrap">
-                    <h1 className="roadmap-container__modal-wrap__title">{title}</h1>
-                    <div className="roadmap-container__modal-wrap__body">{body}</div>
+                <div className="p-4 flex flex-col align-middle min-w-[20rem]">
+                    <h1 className="my-8 text-center">{title}</h1>
+                    <div className="my-4">{body}</div>
                 </div>  
             </Modal>
         </>
