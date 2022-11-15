@@ -1,5 +1,4 @@
 import React from 'react'
-import './social.scss'
 import { FaTwitter, FaDiscord, FaInstagram } from 'react-icons/fa'
 import { RiShipLine } from 'react-icons/ri'
 import '../styles/util.css'
