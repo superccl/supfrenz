@@ -2,13 +2,14 @@ import React from 'react'
 import './social.scss'
 import { FaTwitter, FaDiscord, FaInstagram } from 'react-icons/fa'
 import { RiShipLine } from 'react-icons/ri'
-const Social = ({ gap, fontSize }) => {
+import '../styles/util.css'
+const Social = ({ className="", fontSize }) => {
   return (
-    <div className="social__container" style={{gap: gap}}>
-    <a href="#" className="social__container__item-link"><RiShipLine className="social__container__item-link__svg" style={{fontSize: fontSize}}/></a>
-    <a href="#" className="social__container__item-link"><FaTwitter className="social__container__item-link__svg" style={{fontSize: fontSize}}/></a>
-    <a href="#" className="social__container__item-link"><FaDiscord className="social__container__item-link__svg" style={{fontSize: fontSize}}/></a>
-    <a href="#" className="social__container__item-link"><FaInstagram className="social__container__item-link__svg" style={{fontSize: fontSize}}/></a>
+    <div className={`flex justify-center items-center gap-6 ${className}`}>
+    <a href="#"><RiShipLine className="random-fill-animation" style={{fontSize: fontSize}}/></a>
+    <a href="#"><FaTwitter className="random-fill-animation" style={{fontSize: fontSize}}/></a>
+    <a href="#"><FaDiscord className="random-fill-animation" style={{fontSize: fontSize}}/></a>
+    <a href="#"><FaInstagram className="random-fill-animation" style={{fontSize: fontSize}}/></a>
   </div>
   )
 }

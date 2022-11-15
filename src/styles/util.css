@@ -59,3 +59,17 @@
 .wiggle-animation:hover {
   animation: wiggle 1s linear infinite;
 }
+
+.rotate-animation {
+  transition: rotate .1s ease-in-out;
+}
+.rotate-animation:hover:nth-child(odd) {
+  rotate: 5deg;
+}
+.rotate-animation:hover:nth-child(even) {
+  rotate: -5deg;
+}
+
+.random-fill-animation:hover {
+  animation: randomFill 2s infinite;
+}
